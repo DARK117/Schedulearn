@@ -1,0 +1,412 @@
+
+body{
+	min-height: 100vh;
+	overflow-x: hidden;
+	background: linear-gradient(#2b1055,#7597de);
+}
+/** MENU */
+header{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background: #151515;
+	height: 3px;
+
+}
+header img{
+	height: 100px;	
+	margin-left: -60px;
+}
+header .logo{
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+font-size: 2.5em;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-family: Origin Tech Demo;
+margin-right: 10px;
+}
+header ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+header ul li{
+	list-style: none;
+	margin-left: 15px;
+
+}
+header ul li a{
+	text-decoration:none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+	font-family: Origin Tech Demo;
+
+
+}
+header ul li a:hover, 
+header ul li a.activo{
+	background: #fff;
+	color: #0EE6E6;
+}
+/** FIN MENU */
+
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding:100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+}
+
+section::before{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #1c0522, transparent);
+}
+section img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+
+}
+section img#moon{
+	mix-blend-mode: screen;
+
+}
+section img#mountains_front{
+	z-index: 1;
+}
+section img#marco{
+position: relative;
+	width: 100%;
+	height: 100vh;
+	padding:70px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	
+}
+
+#texto{
+	position: absolute;
+	right: -350px;
+	color: #fff;
+	white-space: nowrap;
+	font-size: 7.5vw;
+	z-index: 0;
+	font-family: Origin Tech Demo;
+
+}
+#btn{
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 30px;
+	border-radius: 40px;
+	background:#fff;
+	color: #2b1055;
+	font-size: 1.5em;
+	z-index: 9;
+	transform: translateY(100px);
+	font-family: Origin Tech Demo;
+}
+#btn{
+	transition: color .4s ease;
+}
+#btn:hover{
+	background:#0EE6E6;
+	color: #fff;
+}
+
+/*SECTION 1*/
+.sec{
+	position: relative;
+	padding: 100px;
+	background: #1c0522;
+	background-image: url(espacio1.jpg);
+}
+.sec h2{
+font-size: 3.5em;
+margin-bottom: 10px;
+color: #0EE6E6;
+font-family: Origin Tech Demo;
+
+}
+.sec p{
+font-size: 1.5em;
+color: #fff;
+font-family: Origin Tech Demo;
+}
+.sec b{
+color: #0EE6E6;
+}
+
+/*SECTION Jug*/
+.secJ h2{
+font-size: 3.5em;
+margin-bottom: 10px;
+color: #0EE6E6;
+font-family: Origin Tech Demo;
+
+}
+.sec b{
+color: #0EE6E6;
+}
+/*SECTION 2*/
+
+.muñecos{
+	position: relative;
+	padding: 50px;
+	background: #1c0522;
+	background-image: url(espacio4.jpg);
+	background-repeat: no-repeat;
+}
+
+.muñecos h2{
+font-size: 30px;
+margin-bottom: 10px;
+color: #0EE6E6;
+font-family: Origin Tech Demo;
+
+}
+
+/*SECTION P*/
+.sec2{
+	position: relative;
+	padding: 100px;
+	background: #1c0522;
+	background-image: url(imagenes/Pag.jpg);
+}
+.sec2 h2{
+font-size: 3.5em;
+margin-bottom: 10px;
+color: #0EE6E6;
+font-family: Origin Tech Demo;
+
+}
+.sec2 p{
+font-size: 1.5em;
+color: #fff;
+font-family: Origin Tech Demo;
+}
+.sec2 b{
+color: #0EE6E6;
+}
+
+
+
+
+//** CARTAS EQUIPO DE TRABAJO*/
+.equipo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background:#111;
+}
+.contenedor{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+	flex-wrap: wrap;
+}
+.contenedor .box{
+position: relative;
+width: 320px;
+height: 400px;
+color: #fff;
+background:#111;
+display: flex;
+justify-content: center;
+align-items: center;
+margin:20px 30px;
+transition: 0.5s;
+}
+.contenedor .box:hover{
+	transform: translateY(-20px);
+
+}
+.contenedor .box:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background:linear-gradient(45deg,#ffbc00,#ff0058);
+}
+.contenedor .box:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background:linear-gradient(45deg,#ffbc00,#ff0058);
+	filter: blur(30px);
+}
+.contenedor .box:nth-child(2)::before,
+.contenedor .box:nth-child(2)::after{
+background:linear-gradient(315deg,#03a9f4,#ff0058);
+}
+.contenedor .box:nth-child(3)::before,
+.contenedor .box:nth-child(3)::after{
+background:linear-gradient(315deg,#4dff03,#00d0ff);
+}
+.contenedor .box span{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	right: 6px;
+	bottom: 6px;
+	background:rgba(0,0,0,0.6);
+	z-index: 2;
+}
+.contendor .box span::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background:rgba(255,255,255,0.1);
+	pointer-events: none;
+}
+
+
+/* CONTENIDO CARTAS */
+.contenedor .box .contenido{
+	position: relative;
+	z-index: 10;
+	padding:20px 40px;
+}
+.contenedor .box .contenido h2{
+	font-size: 2em;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+
+.Jugar{
+	background-image: url("imagenes/nave.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/** Footer */
+footer{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:#111;
+	height: auto;
+	width: 100vw;
+	font-family: Origin Tech Demo;
+	padding-top: 40px;
+	color: #fff;
+}
+footer img{
+	
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	
+
+
+}
+.contenido-footer{
+	
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.contenido-footer h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+	color:  #0EE6E6;
+}
+.contenido-footer p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size: 14px; 
+}
+.social{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+.social li{
+margin: 0 10px;
+}
+.social a{
+	text-decoration: none;
+	color: #fff;
+}
+.social a i{
+	font-size:1.1rem;
+	transition: color .4s ease;
+}
+.social a:hover i{
+	color: #0EE6E6;
+}
+.boton-footer {
+	background:#000;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+.boton-footer p{
+	font-size:14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.boton-footer span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+/* MAPS */
+
+.mapsbox{
+	position: absolute;
+	width: 500px;
+	height: 250px;
+	background: #fff;
+	left: 60%;
+}
+.mapsbox iframe{
+	width: 100%;
+	height: 100%;
+	align-items: left;
+}
+

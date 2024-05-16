@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body{
+	background: #111;
+	overflow-x: hidden;
+}
+
+section{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+}
+
+section h2 {
+	margin-left: 200px;
+	font-size: 4em;
+	color: #0EE6E6;
+	margin-bottom: 20px;
+	font-family: Origin Tech Demo;
+}
+
+section h3{
+	font-size: 20px;
+	color: #0EE6E6;
+	margin-bottom: 20px;
+	font-family: Origin Tech Demo;
+	text-align: center;
+}
+section img{
+	height: 150px;
+	display:block;
+	margin:auto;
+}
+section p{
+	font-family: "Popins",sans-serif;
+	font-size: 20px;
+}
+section .diagrama img{
+	height: 500px;
+	width: 600px;
+}
+
+section .contenedorA{
+	position: relative;
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+section:nth-child(even) .contenedorA{
+	flex-direction: row-reverse;
+
+}
+section .contenedorA .imgbx{
+	position: relative;
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+}
+section .contenedorA .imgbx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section .contenedorA .contenido{
+	position: absolute;
+	right: 0;
+	margin-top: 200px;
+	margin-bottom: 40px;
+	padding: 40px;
+	background: #333;
+	z-index: 1;
+	max-width: 400px;
+	color: #fff;
+	box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+	border-bottom: 6px solid #4ac7ff;
+}
+section:nth-child(even) .contenedorA .contenido{
+left: 0;
+}

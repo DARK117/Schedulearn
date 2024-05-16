@@ -1,0 +1,48 @@
+
+::-webkit-scrollbar{
+	width: 0;	
+}
+#scroll{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 12px;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+}
+#barraprogreso {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 12px;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate{
+	0%,100%{
+		filter: hue-rotate(0deg);
+	}
+	50%{
+		filter: hue-rotate(360deg);
+	}
+}
+#barraprogreso:before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	filter: blur(10px);
+}
+#barraprogreso:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	filter: blur(30px);
+}

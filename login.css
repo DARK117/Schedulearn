@@ -1,0 +1,215 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Origin Tech Demo;
+}
+
+.healog{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  background: #151515;
+  height: 3px;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #03a9f4;
+	transition: 0.5s;
+}
+body.active{
+	background: #f43648;
+
+}
+.contlogin{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	margin: 20px;
+	margin-top: 100px;
+}
+.bluebg{
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	height: 420px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(255,255,255,0.2);
+	box-shadow: 0 5px 45px rgba(0,0,0,0.15);
+}
+.bluebg .box{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.bluebg .box h2{
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-bottom: 10px;
+
+}
+.bluebg .box button{
+	cursor: pointer;
+	padding: 10px 20px;
+	background: #fff;
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	border: none;
+}
+
+.formulariobox{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+	transition: 0.5s ease-in-out;
+	overflow: hidden;
+}
+/* cuando se presiona el boton de registrarse*/
+
+.formulariobox.active{
+	left: 50%;
+}
+
+.formulariobox .form{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding: 50px;
+	transition: 0.5s;
+}
+.formulariobox .iniciarform{
+	transition-delay: 0.25s;
+
+}
+.formulariobox.active .iniciarform{
+	left: -100%;
+	transition-delay: 0s;
+
+}
+.formulariobox .registrarseform{
+	left: 100%;
+	transition-delay: 0s;
+}
+.formulariobox.active .registrarseform{
+	left: 0;
+	transition-delay: 0.25s;
+
+}
+
+.formulariobox .form form{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.formulariobox .form form h3{
+	font-size: 1.5em;
+	color: #333;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+.formulariobox .form form input{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	outline: none;
+	font-size: 16px;
+	border: 1px solid #333;
+	font-family: Nasalization;
+}
+.formulariobox .form form input[type="submit"]{
+	background: #03a9f4;
+	border: none;
+	color: #fff;
+	max-width: 100px;
+	cursor: pointer;
+	font-size: 15px;
+}
+.formulariobox.active .registrarseform input[type="submit"]{
+	background: #f43648;
+	text-align: center;
+	margin-right: 15px;
+
+
+
+}
+
+.formulariobox .form form .olvido{
+	color: #333;
+}
+
+table{
+	
+	width: 100%;
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse; 
+
+}
+th,td{
+
+	padding: 20px;
+}
+
+@media(max-width: 991px){
+	.contlogin{
+		max-width: 400px;
+		height: 650px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contlogin .bluebg{
+		top: 0;
+		height: 100%;
+
+	}
+	.formulariobox{
+		width: 100%;
+		height: 500px;
+		top: 0;
+		box-shadow: none;
+
+	}
+	.bluebg .box{
+		position: absolute;
+		width: 100%;
+		height: 150px;
+		bottom: 0;
+
+	}
+	.box.iniciar{
+		top: 0;
+	}
+	.formulariobox.active{
+		left: 0;
+		top: 150px;
+	}
+
+}
