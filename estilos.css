@@ -1,56 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
 
 body{
+	background: #111;
 	min-height: 100vh;
 	overflow-x: hidden;
 	background: linear-gradient(#2b1055,#7597de);
+	
 }
 /** MENU */
 header{
-	position: relative;
 	top: 0;
 	left: 0;
+	position: relative;
 	width: 100%;
-	padding: 40px 60px;
+	height: 80px;
+	background-color: #151515;
+	z-index: 2;
+}
+
+.nav{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-
-	background: #151515;
-	height: 3px;
-
+	max-width: 992px;
+	margin: 0 auto;
+	position: absolute;
+	left: 10%;
 }
-header img{
-	height: 100px;	
-	margin-left: -60px;
+
+.logoimg{
+	position: absolute;
+	height: 100px;
+	left: -120px;
 }
-header .logo{
+
+.logo{
 color: #fff;
 font-weight: 700;
 text-decoration: none;
+line-height: 80px;
 font-size: 2.5em;
 text-transform: uppercase;
 letter-spacing: 2px;
 font-family: Origin Tech Demo;
 margin-right: 10px;
 }
-header ul{
+.Nav-Menu{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-header ul li{
+	margin-right: 40px;
 	list-style: none;
-	margin-left: 15px;
 
 }
-header ul li a{
+.Nav-Menu-Item{
+	font-size: 18px;
+	margin: 0 10px;
+	line-height: 80px;
+	text-transform: uppercase;
+
+}
+.Nav-Menu-Item a{
 	text-decoration:none;
 	padding: 6px 15px;
 	color: #fff;
 	border-radius: 20px;
 	font-family: Origin Tech Demo;
+}
 
+.Nav-Toggle{
+	color: #fff;
+	background: none;
+	border: none;
+	font-size: 30px;
+	line-height: 60px;
+	cursor: pointer;
+	display: none; /*para ue no se vea el nav bar en computadores*/
 
 }
 header ul li a:hover, 
@@ -78,7 +105,7 @@ section::before{
 	bottom: 0;
 	width: 100%;
 	height: 100px;
-	background: linear-gradient(to top, #1c0522, transparent);
+	
 }
 section img{
 	position: absolute;
@@ -114,7 +141,6 @@ position: relative;
 	color: #fff;
 	white-space: nowrap;
 	font-size: 7.5vw;
-	z-index: 0;
 	font-family: Origin Tech Demo;
 
 }
@@ -122,11 +148,11 @@ position: relative;
 	text-decoration: none;
 	display: inline-block;
 	padding: 8px 30px;
+	margin-bottom: 100px;
 	border-radius: 40px;
 	background:#fff;
 	color: #2b1055;
 	font-size: 1.5em;
-	z-index: 9;
 	transform: translateY(100px);
 	font-family: Origin Tech Demo;
 }
@@ -144,6 +170,7 @@ position: relative;
 	padding: 100px;
 	background: #1c0522;
 	background-image: url(espacio1.jpg);
+	background-repeat: no-repeat;
 }
 .sec h2{
 font-size: 3.5em;
@@ -177,9 +204,25 @@ color: #0EE6E6;
 .muñecos{
 	position: relative;
 	padding: 50px;
-	background: #1c0522;
 	background-image: url(espacio4.jpg);
-	background-repeat: no-repeat;
+	background-size: cover; /* Hace que la imagen cubra todo el section */
+    background-position: center; /* Centra la imagen en el section */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;
+    height: 220vh; /* Hace que el section ocupe toda la altura de la ventana */
+}
+
+.titulomuñecos{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1200px;
+	height: 80px;
+	background-color: rgb(5, 5, 5);
+	padding-top: 15px;
+	text-align: center;
+	font-size: 2.5em;
+	color: #fff;
 }
 
 .muñecos h2{
@@ -196,6 +239,8 @@ font-family: Origin Tech Demo;
 	padding: 100px;
 	background: #1c0522;
 	background-image: url(imagenes/Pag.jpg);
+	background-repeat: no-repeat;
+	
 }
 .sec2 h2{
 font-size: 3.5em;
@@ -211,88 +256,6 @@ font-family: Origin Tech Demo;
 }
 .sec2 b{
 color: #0EE6E6;
-}
-
-
-
-
-//** CARTAS EQUIPO DE TRABAJO*/
-.equipo{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background:#111;
-}
-.contenedor{
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 40px 0;
-	flex-wrap: wrap;
-}
-.contenedor .box{
-position: relative;
-width: 320px;
-height: 400px;
-color: #fff;
-background:#111;
-display: flex;
-justify-content: center;
-align-items: center;
-margin:20px 30px;
-transition: 0.5s;
-}
-.contenedor .box:hover{
-	transform: translateY(-20px);
-
-}
-.contenedor .box:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100%;
-	height: 100%;
-	background:linear-gradient(45deg,#ffbc00,#ff0058);
-}
-.contenedor .box:after{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width:100%;
-	height: 100%;
-	background:linear-gradient(45deg,#ffbc00,#ff0058);
-	filter: blur(30px);
-}
-.contenedor .box:nth-child(2)::before,
-.contenedor .box:nth-child(2)::after{
-background:linear-gradient(315deg,#03a9f4,#ff0058);
-}
-.contenedor .box:nth-child(3)::before,
-.contenedor .box:nth-child(3)::after{
-background:linear-gradient(315deg,#4dff03,#00d0ff);
-}
-.contenedor .box span{
-	position: absolute;
-	top: 6px;
-	left: 6px;
-	right: 6px;
-	bottom: 6px;
-	background:rgba(0,0,0,0.6);
-	z-index: 2;
-}
-.contendor .box span::before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background:rgba(255,255,255,0.1);
-	pointer-events: none;
 }
 
 
@@ -321,7 +284,7 @@ footer{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background:#111;
+	background:#181818;
 	height: auto;
 	width: 100vw;
 	font-family: Origin Tech Demo;
@@ -352,7 +315,7 @@ footer img{
 	color:  #0EE6E6;
 }
 .contenido-footer p{
-max-width: 500px;
+
 margin: 10px auto;
 line-height: 28px;
 font-size: 14px; 
@@ -399,7 +362,7 @@ margin: 0 10px;
 
 .mapsbox{
 	position: absolute;
-	width: 500px;
+	width: 470px;
 	height: 250px;
 	background: #fff;
 	left: 60%;
@@ -408,5 +371,347 @@ margin: 0 10px;
 	width: 100%;
 	height: 100%;
 	align-items: left;
+}
+
+.card{
+
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 0;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 3.5em;
+	flex-wrap: wrap;
+}
+
+/* Responsive Design */
+
+
+
+/*VERSION CELULAR*/
+
+@media screen and (max-width: 415px) {
+
+
+/*FLEXBOX*/
+
+.card{
+
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 0;
+	max-width: 1200px;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 3.5em;
+	flex-wrap: wrap;
+}
+
+.card_item{
+	
+	padding-bottom: 3em;
+	flex-basis: 280px;
+	max-width: 450px;
+	flex-grow: 1;
+}
+
+.card_content{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.card_picture{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.card_img{
+	width: 100%;
+}
+
+.card_title{
+	margin-bottom: 1em;
+}
+
+
+
+
+
+/*HEADER INICIO*/
+
+
+/** MENU */
+header{
+	top: 0;
+	left: 0;
+	position: sticky;
+	width: 100%;
+	height: 80px;
+	background-color: #151515;
+	z-index: 10;
+}
+
+
+.logoimg{
+	position: absolute;
+	height: 60px;
+	top: 5px;
+	left:-40px;
+}
+.logo{
+color: #fff;
+font-weight: 700;
+text-decoration: none;
+line-height: 80px;
+font-size: 2em;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-family: Origin Tech Demo;
+margin: 0 30px;
+}
+.Nav-Menu{
+flex-direction: column;
+align-items: center;
+margin: 0;
+background-color: #221f1f;
+position: fixed;
+left: 0;
+top: 80px;
+width: 100%;
+padding: 20px 0;
+height: calc(100% - 70px);
+overflow-y: auto;
+left: 100%;
+transition: left 0.3s;
+z-index: 10;
+
+}
+.Nav-Menu-Item{
+list-style: none;
+margin-left: 15px;
+
+}
+
+header ul li a:hover, 
+header ul li a.activo{
+	background: none;
+	color: #0EE6E6;
+}
+
+
+.Nav-Toggle{
+	display: block; /*para ue no se vea el nav bar en computadores*/
+
+}
+
+.Nav-Menu-Visible{
+
+	left: 0;
+}
+
+.Nav-Toggle:focus:not(:focus-visible){
+	outline: none;
+}
+
+
+
+
+/*HEADER FINAL*/
+
+
+/*BODY INICIO*/
+
+	
+
+	/*PRIMERA SECCION LUNA Y MONTAÑAS*/
+	
+.card img#marco{
+position: relative;
+	width: 100%;
+	height: 100vh;
+	padding:70px;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	
+}
+
+	.card_text #btn{
+		position: absolute;
+		text-decoration: none;
+		display: inline-block;
+		padding: 8px 30px;
+		border-radius: 40px;
+		background:#fff;
+		color: #2b1055;
+		font-size: 1.5em;
+		z-index: 9;
+		transform: translateY(100px);
+		transform: translateX(50%);
+		font-family: Origin Tech Demo;
+	}
+
+	.card_text #texto{
+		position: absolute;
+		top: 30%;
+		right: -400px;
+		color: #fff;
+		white-space: nowrap;
+		font-size: 3.5em;
+		font-family: Origin Tech Demo;
+	
+	}
+	#btn{
+		position: absolute;
+		text-decoration: none;
+		left: 10px;
+		top: 40%;
+		display: inline-block;
+		border-radius: 40px;
+		background:#fff;
+		color: #2b1055;
+		font-size: 1.5em;
+		transform: translateY(100px);
+		font-family: Origin Tech Demo;
+	}
+	#btn{
+		transition: color .4s ease;
+	}
+	#btn:hover{
+		background:#0EE6E6;
+		color: #fff;
+	}
+
+
+
+/*SECCION PERSONAJES*/
+
+	.titulomuñecos{
+		width: 400px;
+		height: 80px;
+		text-align: center;
+		font-size: 1.5em;
+		color: #fff;
+	}
+
+
+
+
+
+
+
+
+
+/** Footer */
+footer{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:#181818;
+	height: auto;
+	width: 100vw;
+	font-family: Origin Tech Demo;
+	padding-top: 40px;
+	color: #fff;
+}
+div .imagenesfooter{
+	width: 50%;
+}
+footer img{
+	
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	padding-left: 5px;
+	left: 5px;
+}
+.contenido-footer{
+	
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.contenido-footer h3{
+	max-width: 50%;
+	font-size: 1.8rem;
+	font-weight: 200;
+	padding-left: 5px;
+	text-transform: capitalize;
+	line-height: 2rem;
+	color:  #0EE6E6;
+}
+.contenido-footer p{
+max-width: 50%;
+margin: 5px;
+padding-left: 5px;
+line-height: 5px;
+font-size: 12px; 
+left: 5px;
+}
+.social{
+	max-width: 50%;
+	left: 5px;
+	padding-left: 5px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 1rem 0;
+}
+.social li{
+margin: 0 10px;
+
+}
+.social a{
+	text-decoration: none;
+	color: #fff;
+}
+.social a i{
+	font-size:1.1rem;
+	transition: color .4s ease;
+}
+.social a:hover i{
+	color: #0EE6E6;
+}
+.boton-footer {
+	background:#000;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+.boton-footer p{
+	font-size:14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+.boton-footer span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+
+	/* MAPS */
+
+.mapsbox{
+	position: absolute;
+	width: 40%;
+	height: 300px;
+	background: #fff;
+	left: 57%;
+}
+.mapsbox iframe{
+	width: 100%;
+	height: 100%;
+	align-items: left;
+}
+
 }
 
