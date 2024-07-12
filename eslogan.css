@@ -12,6 +12,14 @@
 
 }
 
+.eslogan img{
+	height: 400px;
+	width: 400px; 
+	left: 60%;
+	top: 15%;
+	border-radius: 50px;
+}
+
 .cajaeslogan2 {
 	position:absolute;
 	top:45%;
@@ -24,6 +32,13 @@
 	perspective: 2000px;
 	transition: 0.5s;
 
+}
+.eslogan .secimg{
+	height: 400px;
+	width: 400px; 
+	left: 10%;
+	top: 20%;
+	border-radius: 50px;
 }
 
 .cajaesloganJ1{
@@ -65,7 +80,7 @@
 	height: 100%;
 	background: transparent;
 	border-top: 20px solid #fff;
-	border-left: 20px solid #fff;
+	border-left: 20px solid #ffffff;
 	box-sizing: border-box;
 }
 .cajaeslogan2:after, .cajaesloganJ:after, .cajaesloganJ1:after{
@@ -80,7 +95,7 @@
 	border-right: 20px solid #fff;
 	box-sizing: border-box;
 }
-.cajaeslogan2 .textoeslogan, .cajaesloganJ .textoeslogan, .cajaesloganJ1 .textoeslogan{
+.cajaeslogan2 .textoeslogan2, .cajaesloganJ .textoeslogan2, .cajaesloganJ1 .textoeslogan2{
 	position: absolute;
 	top: 30px;
 	left: -30px;
@@ -89,7 +104,7 @@
 	height: calc(100% - 60px);
 	transition: 0.5s;
 }
-.cajaeslogan2:hover .textoeslogan, .cajaesloganJ:hover .textoeslogan, .cajaesloganJ1:hover .textoeslogan{
+.cajaeslogan2:hover .textoeslogan2, .cajaesloganJ:hover .textoeslogan2, .cajaesloganJ1:hover .textoeslogan2{
 	transform: rotateY(30deg) skewY(-5deg);
 }
 
@@ -142,19 +157,93 @@
 	box-sizing: border-box;
 	text-align: center;
 	z-index: 3;
-	font-family: Origin Tech Demo;
 }
 .textoeslogan div h1{
 	margin: 0 0 20px;
 	padding: 0;
-	color: #fff;
+	color: #11df0a;
+	font-size: 2.5em;
 }
 .textoeslogan div p{
 	margin: 0 0 20px;
 	padding: 0;
 	color: #fff;
 	font-size: 15px;
+	font-family: nasalization;
 }
+
+
+/***/
+
+.cajaeslogan2:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border-top: 20px solid #fff;
+	border-left: 20px solid #fff;
+	box-sizing: border-box;
+}
+.cajaeslogan2:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border-bottom: 20px solid #fff;
+	border-right: 20px solid #fff;
+	box-sizing: border-box;
+}
+.cajaeslogan2 .textoeslogan{
+	position: absolute;
+	top: 30px;
+	left: -30px;
+	background: #262626;
+	width: calc(100% + 60px);
+	height: calc(100% - 60px);
+	transition: 0.5s;
+}
+.cajaeslogan2:hover .textoeslogan{
+	transform: rotateY(30deg) skewY(-5deg);
+}
+.textoeslogan2 div{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+	padding: 40px 80px;
+	box-sizing: border-box;
+	text-align: center;
+	z-index: 3;
+	
+}
+.textoeslogan2 div h1{
+	margin: 0 0 20px;
+	padding: 0;
+	color: #0dccbc;
+	font-size: 2.5em;
+}
+.textoeslogan2 div p{
+	margin: 0 0 20px;
+	padding: 0;
+	color: #fff;
+	font-size: 15px;
+	font-family: nasalization;
+}
+
+.eslogan b{
+	margin: 0 0 20px;
+	padding: 0;
+	color: #0dccbc;
+}
+
+
 .eslogan .fa{
 	width: 80px;
 	height: 80px;
@@ -174,4 +263,215 @@ position: absolute;
 	bottom: 0;
 	right: 0;
 	z-index: 1;	
+}
+
+@media (max-width: 412px) {
+
+	.cajaeslogan {
+	position:absolute;
+	top:35%;
+	left: 45%;
+	transform: translate(-50%,-50%);
+	width: 250px;
+	height: 400px;
+	margin-top: 20px;
+	transform-style:preserve-3d;
+	perspective: 2000px;
+	transition: 0.5s;
+	
+	}
+
+	.eslogan img.secimg{
+		height: 200px;
+		width: 200px; 
+		left: 45%;
+		top: 70%;
+		border-radius: 50px;
+	}
+
+	
+
+	
+ .cajaeslogan2 {
+		position:absolute;
+		top:25%;
+		left: 55%;
+		transform: translate(-50%,-50%);
+		width: 250px;
+		height: 300px;
+		margin-top: 20px;
+		transform-style:preserve-3d;
+		perspective: -2000px;
+		transition: 0.5s;
+	
+	}
+
+	.eslogan img{
+		height: 200px;
+		width: 200px; 
+		left: 5%;
+		top: 56%;
+		border-radius: 50px;
+		transform: scaleX(-1);
+	}
+	
+
+	
+
+	.eslogan .fa{
+		width: 50px;
+		height: 50px;
+		background: #ffffff;
+		color: #262626;
+		text-align: center;
+		line-height: 30px !important;
+		font-size: 20px !important;
+	}
+	.eslogan .fa.fae1{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.eslogan .fa.fae2{
+	position: absolute;
+		bottom: 0;
+		right: -20px;
+		z-index: 1;	
+	}
+
+	.card .textoeslogan  h1{
+		position: absolute;
+		top: -110px;
+		left: 70px;
+		color: #0bdd16;
+		font-size: 2.0em;
+		text-align: center;
+		/*border: 1px solid #f10d0d;*/
+		
+	}
+
+	.card .textoeslogan p{
+		position: absolute;
+		left: 0;
+		top: -65px;
+		padding: 5px;
+		width: 290px;
+  		height: fit-content; /* Ajusta la altura del div al contenido */
+		/*border: 1px solid #ffffff;*/
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.2;
+		
+	}
+
+
+	.card .textoeslogan2 h1{
+		position: absolute;
+		top: -65px;
+		left: 0;
+		color: #0082fc;
+		font-size: 1.5em;
+		text-align: center;
+		/*border: 1px solid #f10d0d; para comprobar la caja del div*/
+		
+	}
+
+	.card .textoeslogan2 p{
+		position: absolute;
+		left: 0;
+		top: -10px;
+		padding: 5px;
+		width: 290px;
+  		height: fit-content; /* Ajusta la altura del div al contenido */
+		/*border: 1px solid #ffffff; para comprobar la caja del div*/
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-size: 12px;
+		line-height: 1.2;
+		
+	}
+
+
+	
+
+	
+
+	.cajaeslogan .textoeslogan, .cajaesloganJ .textoeslogan, .cajaesloganJ1 .textoeslogan{
+		position: absolute;
+		top: 20px;
+		left: -30px;
+		background: #262626;
+		width: calc(100% + 60px);
+		height: calc(100% - 60px);
+		transition: 0.5s;
+	}
+
+	.cajaeslogan:before, .cajaesloganJ:before, .cajaesloganJ1:before{
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: -20px;
+		width: 300px;
+		height: 100%;
+		background: transparent;
+		border-top: 20px solid #f5f0f0;
+		border-left: 20px solid #ffffff;
+		box-sizing: border-box;
+	}
+	.cajaeslogan:after, .cajaesloganJ:after, .cajaesloganJ1:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -20px;
+		width: 300px;
+		height: 100%;
+		background: transparent;
+		border-bottom: 20px solid #fff;
+		border-right: 20px solid #fff;
+		box-sizing: border-box;
+	}
+
+	/*********/
+
+
+	.cajaeslogan2 .textoeslogan2, .cajaesloganJ .textoeslogan2, .cajaesloganJ1 .textoeslogan2{
+		position: absolute;
+		top: 20px;
+		left: -30px;
+		background: #262626;
+		width: calc(100% + 60px);
+		height: calc(100% - 60px);
+		transition: 0.5s;
+	}
+
+	.cajaeslogan2:before, .cajaesloganJ:before, .cajaesloganJ1:before{
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: -20px;
+		width: 300px;
+		height: 100%;
+		background: transparent;
+		border-top: 20px solid #f5f0f0;
+		border-left: 20px solid #ffffff;
+		box-sizing: border-box;
+	}
+	.cajaeslogan2:after, .cajaesloganJ:after, .cajaesloganJ1:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -20px;
+		width: 300px;
+		height: 100%;
+		background: transparent;
+		border-bottom: 20px solid #fff;
+		border-right: 20px solid #fff;
+		box-sizing: border-box;
+	}
+
 }

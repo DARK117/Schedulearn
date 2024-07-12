@@ -24,29 +24,33 @@
 	<link rel="stylesheet"  href="estipag.css">	
 	<link rel="stylesheet" type="text/css" href="popup.css?1.2">
 
-
-
-
+	<!--SCRIPTS JAVASCRIPT-->
+	<script defer src="Navbar.js"></script>
+	<script defer src="Imagenesluna.js"></script>
+	<script defer src="slidePersonajes.js"></script>
+	<script defer src="BarraProgreso.js"></script>
 </head>
 <body>
 
 
 	
-	<!-- INICIO MENU -->	
-<header>
-
-	<a href="index.html"><img src="imagenes\logo.png"></a>
-	<a href="index.html" class="logo">Schedulearn</a>
-	<ul>
-		<li><a href="index.html">Inicio</a></li>
-		<li><a href="acerca de original.html" class="activo">Acerca</a></li>
-		<li><a href="equipo de trabajo.html">Equipo</a></li>
-		<li><a href="contactanos.html">Contactenos</a></li>
-		<div class="contenedorboton">
-		<a href="Jugar.html"><span>Jugar</span></a>
-		</div>
+  <!-- INICIO MENU -->    
+  <header>
+	<nav class="nav">
+		<a href="index.html"><img src="imagenes/logo.png" class="logoimg"></a>
+		<a href="index.html" class="logo">Schedulearn</a>
+		<button class="Nav-Toggle" aria-label="Abrir menú"><i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
+	<ul class="Nav-Menu">
+		<li class="Nav-Menu-Item"><a href="index.html">Inicio</a></li>
+		<li class="Nav-Menu-Item"><a href="acerca de original.html" class="activo">Acerca</a></li>
+		<li class="Nav-Menu-Item"><a href="equipo de trabajo.html">Equipo</a></li>
+		<li class="Nav-Menu-Item"><a href="contactanos.html">Contactenos</a></li>
+		<li><div class="contenedorboton">
+			<a  href="Jugar.html"><span>Jugar</span></a>
+			</div></li>	
 	</ul>
-
+</nav>
 </header>
 <!--FIN MENU-->
 
@@ -206,7 +210,7 @@
 			<div class="contenido" data-jarallax-element="-200 0">
 				<h3>Adobe Photoshop</h3>
 				<p>Programa usado para la creacion de las hojas de los sprites</p>
-				<img src="imagenes/photoshop.png">
+				<img src="IMAGENES/photoshop.png">
 				<img src="imagenes/photoshop.gif">
 			</div>
 		</div>
@@ -223,7 +227,7 @@
 			<div class="contenido" data-jarallax-element="-200 0">
 				<h3>Adobe Animate</h3>
 				<p>Programa utilizado para la creacion de los personajes y sus animaciones</p>
-				<img src="imagenes/animate.png">
+				<img src="IMAGENES/animate.png">
 				<img src="imagenes/animate.gif">
 			</div>
 		</div>
@@ -240,7 +244,7 @@
 			<div class="contenido" data-jarallax-element="-200 0">
 				<h3>Unity 2D</h3>
 				<p>Motor grafico de desarrollo del videojuego</p>
-				<img src="imagenes/unity.png">
+				<img src="IMAGENES/unity.png">
 				<img src="imagenes/unity.gif">
 			</div>
 		</div>
@@ -257,11 +261,20 @@
 			<div class="contenido" data-jarallax-element="-200 0">
 				<h3>Sublime Text</h3>
 				<p>Editor de texto que usamos para desarrollar nuestra pagina web</p>
-				<img src="imagenes/sublime.png">
+				<img src="IMAGENES/sublime.png">
 				<img src="imagenes/sublime.gif">
 			</div>
 		</div>
 	</div>
+</section>
+
+<section>
+	<div class="box">
+		<h2 data-jarallax-element="0 200">Menciones</h2>
+				<h3>Articulo con descripcion del videojuego en la revista de la universidad de cundinamarca pag 9</h3>
+				<iframe src="Articulo.pdf"></iframe>
+		</div>
+
 </section>
 
 <section>
@@ -278,6 +291,8 @@
 	</div>
 </section>
 
+
+
 <!-- INICIO PIE DE PAGINA-->
 <footer>
 <!-- INICIO MAPA-->
@@ -286,8 +301,10 @@
 </div>
 <!--FINAL MAPA -->	
 	<div class="contenido-footer">
-	<img src="imagenes\logo.png">
-	<img src="imagenes\+10.png">
+		<div class="imagenesfooter">
+			<img src="imagenes\logo.png">
+			<img src="imagenes\+10.png">
+		</div>
 
 
 		<h3>SCHEDULEARN</h3>
@@ -319,19 +336,9 @@
 
 
 <!-- INICIO RGB SCROLL-->
-<div id="barraprogreso"></div>
+<div id="barraprogreso">
 <div id= "scroll"></div>
-
-
-
-<script type="text/javascript">
-	let progress = document.getElementById('barraprogreso');
-	let totalHeight = document.body.scrollHeight - window.innerHeight;
-	window.onscroll = function(){
-		let progressHeight = (window.pageYOffset / totalHeight ) * 100;
-		progress.style.height = progressHeight + "%";
-	} 
-</script>
+</div>
 <!--FIN RGB SCROLL-->
 
 </body>

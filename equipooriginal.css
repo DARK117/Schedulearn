@@ -1,8 +1,18 @@
-.equipo{
-	background:url(circuito.png);
-	background-size: cover;
-
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
+.equipo{
+	height: 100vh;
+		background-image: url('circuito.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	
+}
+
 .container{
 	position: relative;
 	z-index: 1;
@@ -12,12 +22,14 @@
 	flex-wrap: wrap;
 	margin: 40px 0;
 	padding: 40px 0;
+	height: 100%;
+	width: 100%;
 
 }
 .container .box{
 position: relative;
-width: 320px;
-height: 400px;
+height: 100%;
+	width: 100%;
 color: #fff;
 background:#111;
 display: flex;
@@ -42,7 +54,7 @@ border-radius: 5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-filter:blur(10px);
+
 	
 }
 
@@ -67,7 +79,7 @@ border-radius: 5px;
 	height: 150px;
 	border-radius: 50%;
 	overflow: hidden;
-	border:10px solid  rgba(0,0,0,0.25);
+	border:5px solid  rgba(0,0,0,0.25);
 }
 .container .carta .content .imgbox img{
 	position: absolute;
@@ -106,7 +118,8 @@ color: #fff;
 
 .container .carta .content .contentbox p{
 	text-align: center;
-	font-family: Arial Nova;
+	font-size: 12px;
+	font-family: nasalization;
 }
 
 .container .carta .sci{
@@ -129,4 +142,196 @@ color: #fff;
 .container .carta .sci li a{
 	color: #fff;
 	font-size: 24px;
+}
+
+
+@media (max-width: 412px) {
+
+
+	/*FLEXBOX*/
+
+.card{
+
+	width: 100%;
+	margin: 0 auto;
+	padding: 60px 0;
+	max-width: 1200px;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 3.5em;
+	flex-wrap: wrap;
+}
+
+.card_item{
+	
+	padding-bottom: 3em;
+	flex-basis: 280px;
+	max-width: 450px;
+	flex-grow: 1;
+}
+
+.card_content{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.card_picture{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+
+}
+
+.card_img{
+	width: 100%;
+}
+
+.card_title{
+	margin-bottom: 1em;
+}
+
+
+
+
+	
+	.equipo{
+		background-color: #111;
+		height: 250vh;
+            background-image: url('circuitos2.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+		
+	}
+
+	.container{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+
+	.container .box{
+		position: relative;
+		height: 100%;
+		width: 100%;
+		color: #fff;
+		background:#181818;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin:20px 30px;
+		transition: 0.5s;
+		border-radius: 5px;
+		
+		}
+		.container .box:hover{
+			transform: translateY(-20px);
+		
+		}
+		.container .carta{
+			position: relative;
+			top: -40px;
+			width: 350px;
+			height: 500px;
+			background:rgba(255,255,255,0.05);
+			box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+			border-radius: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 50px;
+			
+		}
+		
+		.container .carta .content{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			opacity: 1; /* cambiar opacidad al inicio estabe en 0.5 y se cambio a 1 para ue sea mas visible*/
+			transition: 0.5s;
+		}
+		.container .carta:hover .content{
+			opacity: 1;
+			transform: translateY(-20px  );
+		
+		}
+		
+		.container .carta .content .imgbox{
+			position: relative;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			overflow: hidden;
+			border:5px solid  rgba(0, 0, 0, 0.432);
+		}
+		.container .carta .content .imgbox img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		
+		.container .carta .content .contentbox h3{
+		color: #0EE6E6;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-weight: 500;
+		font-size: 18px;
+		text-align: center;
+		margin: 20px 0 10px;
+		line-height: 1.1em;
+		font-family: Origin Tech Demo;
+		
+		
+		}
+		.container .carta .content .contentbox  h3 span {
+		font-size: 12px;
+		font-weight: 300;
+		text-transform: initial;
+		color: #fff;
+		}
+		
+		.sci a i{
+			transition: color .4s ease;
+		}
+		.sci a:hover i{
+			color: #0EE6E6;
+		}
+		
+		.container .carta .content .contentbox p{
+			text-align: center;
+			font-family: Arial Nova;
+		}
+		
+		.container .carta .sci{
+			position: absolute;
+			bottom: 50px;
+			display: flex;
+		}
+		.container .carta .sci li{
+			list-style: none;
+			margin: 0 10px;
+			transform: translateY(40px);
+			transition: 0.5s;
+			opacity:0;
+			transition-delay: calc(0.1s * var(--i));
+		}
+		.container .carta:hover .sci li{
+			transform: translateY(0px);
+			opacity: 1;
+		}
+		.container .carta .sci li a{
+			color: #fff;
+			font-size: 24px;
+		}
+		
 }
