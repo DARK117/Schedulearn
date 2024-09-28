@@ -6,11 +6,7 @@ const btnizq = document.querySelector(".btn-izq "),
     btnizq.addEventListener("click", e =>moveToLeft())
     btnder.addEventListener("click", e =>moveToRight())
 
-    setInterval(() =>{
-        moveToRight()
-
-    },20000);
-
+    
     let operacion =0,
     contador =0,
     Anchoimagen = 100/ sliderSection.length;

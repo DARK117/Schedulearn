@@ -19,6 +19,16 @@
 	top: 15%;
 	border-radius: 50px;
 }
+.PresentacionYT{
+	position: relative;
+	top: 35px;	
+}
+.PresentacionYT iframe{
+	border-radius: 5px;
+	height: 500px;
+	width: 800px;
+
+}
 
 .cajaeslogan2 {
 	position:absolute;
@@ -40,6 +50,7 @@
 	top: 20%;
 	border-radius: 50px;
 }
+
 
 .cajaesloganJ1{
 	position:absolute;
@@ -236,6 +247,9 @@
 	font-size: 15px;
 	font-family: nasalization;
 }
+.textoeslogan2 div b{
+	font-family: nasalization;
+}
 
 .eslogan b{
 	margin: 0 0 20px;
@@ -287,6 +301,18 @@ position: absolute;
 		left: 45%;
 		top: 70%;
 		border-radius: 50px;
+	}
+
+	.PresentacionYT{
+		position: absolute;
+		top: 110px;
+		left: 0;	
+	}
+	.PresentacionYT iframe{
+		border-radius: 5px;
+		height: 400px;
+		width: 400px;
+	
 	}
 
 	

@@ -28,7 +28,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px;
 }
 
 .btn-izq, 
@@ -51,7 +50,7 @@
 
 .btn-der:hover,
 .btn-izq:hover{
-    background-color: #1a5e79ef;
+    background-color: #12536d;
     color: aliceblue;
 }
 

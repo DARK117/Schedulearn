@@ -2,56 +2,53 @@
 .descarga{
 	align-content: center;
 	align-items: center;
-	margin-top: 30%;
 	text-align: center;
+	margin-bottom: 120px;
 
 }
+
 
 .descargapc{
-	align-items: center;
-	align-content: center;
 	background-color: black;
-	height: 80%;
-	width: 400px;
-	margin-left: 9%;
-
-}
-
-.descargapc,h1{
-	color: #fff;
-	text-align: center;
-	
-
+	top: 80px;
+	position: absolute;
 }
 
 
+.imagenespc{
+	position: relative;
+	top: 10px;
+}
 
 .imagenpc{
 	width: auto; /* La imagen ocupará el 50% del ancho del contenedor principal */
     height: 180px;
-    margin-left: 63%;
-    margin-top: 20%;
+	left: 100px;
+	top: 100px;
+	z-index: 1;
     
 }
 .imagenpc2{
 	width: auto; /* La imagen ocupará el 50% del ancho del contenedor principal */
-    height: 180px;
-    margin-left: 72%;
-    margin-top: 17%;
+    height: 200px;
+	left: -60px;
+	top: 100px;
+	z-index: 2;
     
 }
 .imagenpc3{
 	width: auto; /* La imagen ocupará el 50% del ancho del contenedor principal */
-    height: 180px;
-    margin-left: 53%;
-    margin-top: 22%;
-    
+    height: 200px;
+	left: 245px;
+	top: 80px;
+	z-index: 3;
 }
 
 
 
 .descarga a{
 	position: relative;
+	top: 250px;
 	background: #0C0C0C;
 	display: inline-block;
 	padding: 25px 51px;
@@ -156,15 +153,6 @@
 		bottom: 100%;
 	}
 }
-
-
-
-
-
-
-
-
-
 
 
 .descargam{
@@ -321,4 +309,57 @@
 	50%,100%{
 		bottom: 100%;
 	}
+}
+
+@media screen and (max-width: 415px) {
+
+	.descargapc{
+
+		height: 400px;
+		width: 350px;
+		position: absolute;
+		
+	}
+	h1{
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+		
+	.imagenespc{
+		height: 300px;
+		width: 100%;
+		position: relative;
+	}
+
+	.descarga{
+		position: absolute;
+		top: 60px;
+		width: 100%;
+	}
+
+	.imagenpc{
+		width: auto; /* La imagen ocupará el 50% del ancho del contenedor principal */
+		height: 160px;
+		left: 100px;
+		top: 100px;
+		z-index: 1;
+		
+	}
+	.imagenpc2{
+		width: auto; /* La imagen ocupará el 50% del ancho del contenedor principal */
+		height: 180px;
+		left: -40px;
+		top: 100px;
+		z-index: 2;
+		
+	}
+	.imagenpc3{
+		width: auto; /* La imagen ocupará el 50% del ancho del contenedor principal */
+		height: 160px;
+		left: 235px;
+		top: 100px;
+		z-index: 3;
+	}
+	
 }

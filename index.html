@@ -74,7 +74,7 @@
         <article class="card_item">
             <div class="card_content">                        
                 <figure class="card_pictures">
-                    <img src="espacio6.jpg" class="card_img"> <!--Fondo del section-->
+                    <img src="espacioanimado.jpg" class="card_img"> <!--Fondo del section-->
                     <div class="card_text">
                         <!--INICIO ESLOGAN-->
                         <div class="eslogan">
@@ -104,21 +104,36 @@
                 <figure class="card_pictures">
                     <img src="espacio7.jpg" class="card_img"> <!--Fondo del section-->
                     <div class="card_text">
-                        <!--INICIO ESLOGAN-->
-                        <div class="eslogan">
-                            <img class="secimg" src="imagenes/halo.jpg">
-                            <div class="cajaeslogan">
-                                <i class="fa fa-quote-left fae2" aria-hidden="true"></i>
-                                <div class="textoeslogan">
-                                    <i class="fa fa-quote-right fae1" aria-hidden="true"></i>
-                                    <div class="espaciotexto2">
-                                        <h1>Historia</h1>
-                                        <p>Es el año 2044 <b>Steve</b> el astronauta iba con su tripulacion a descubrir un nuevo planeta llamado <b>$h3du}3∆πN</b> (Shedulearn) por causas desconocidas la nave tuvo un fallo en sus motores provocando que todo se descontrolara y para no estrellarse en el planeta los tripulantes evacuaron la nave por medio de capsulas siendo dispersados por todo el planeta, Steve debera encontrar a sus compañeros para luego dirigirse a la nave y enviar una señal de rescate gracias a su compañero robot Steve podra investigar acerca del planeta un camino largo le espera a Steve, ayudalo a llegar a su nave y mandar una señal de ayuda, te deseamos suerte</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="titulomuñecos">
+                            <h1>Presentacion del proyecto</h1>
                         </div>
-                    </div>
+                            <!--INICIO ESLOGAN-->
+                            <div class="eslogan">
+                                <div class="PresentacionYT" style="cursor: pointer;" onclick="redirectToYouTube()">
+                                    <iframe id="youtubeVideo" src="https://www.youtube.com/embed/S_6IJqOE2P8?si=ISGKPpBCsCV-QWni" 
+                                            title="YouTube video player" 
+                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                            referrerpolicy="strict-origin-when-cross-origin" 
+                                            allowfullscreen>
+                                    </iframe>
+                                </div>
+                                
+                                <script>
+                                  function redirectToYouTube() {
+                                    // Solo redirigir si el usuario está en un dispositivo móvil
+                                    if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                                      window.location.href = "https://www.youtube.com/watch?v=S_6IJqOE2P8"; // Redirigir a YouTube
+                                    } else {
+                                      // Aquí puedes agregar un comportamiento adicional si lo deseas para desktop
+                                      // Por ejemplo, podrías abrir el video en un modal o hacer otra acción
+                                      console.log("Video clickeado en desktop");
+                                    }
+                                  }
+                                </script>
+                                
+                                    
+                            </div>
+                    </div>    
                 </figure>
             </div>
         </article>    
@@ -252,7 +267,9 @@
     </section> 
     <!--FINAL Pagina tercer section-->
 
+    <!--INICIO Pagina cuarto section-->
     
+    <!--FINAL Pagina cuarto section-->
 
 
     <!-- INICIO PIE DE PAGINA-->

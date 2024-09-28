@@ -30,6 +30,7 @@ header{
 	margin: 0 auto;
 	position: absolute;
 	left: 10%;
+	background-color: #151515;
 }
 
 .logoimg{
@@ -49,12 +50,14 @@ letter-spacing: 2px;
 font-family: Origin Tech Demo;
 margin-right: 10px;
 }
+
 .Nav-Menu{
 	display: flex;
 	margin-right: 40px;
 	list-style: none;
 
 }
+
 .Nav-Menu-Item{
 	font-size: 18px;
 	margin: 0 10px;
@@ -72,12 +75,18 @@ margin-right: 10px;
 
 .Nav-Toggle{
 	color: #fff;
-	background: none;
+	background: #000000;
 	border: none;
-	font-size: 30px;
-	line-height: 60px;
+	font-size: 35px;
 	cursor: pointer;
 	display: none; /*para ue no se vea el nav bar en computadores*/
+	position: absolute;
+	border-radius: 25%;
+	height: 50px;
+	width: 50px;
+	left: 93%;
+	top: 15px;
+	
 
 }
 header ul li a:hover, 
@@ -177,8 +186,8 @@ font-size: 3.5em;
 margin-bottom: 10px;
 color: #0EE6E6;
 font-family: Origin Tech Demo;
-
 }
+
 .sec p{
 font-size: 1.5em;
 color: #fff;
@@ -187,6 +196,7 @@ font-family: Origin Tech Demo;
 .sec b{
 color: #0EE6E6;
 }
+
 
 /*SECTION Jug*/
 .secJ h2{
@@ -216,7 +226,7 @@ color: #0EE6E6;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 1200px;
+	width: 100%;
 	height: 80px;
 	background-color: rgb(5, 5, 5);
 	padding-top: 15px;
@@ -238,7 +248,7 @@ font-family: Origin Tech Demo;
 	position: relative;
 	padding: 100px;
 	background: #1c0522;
-	background-image: url(espacio6.jpg);
+	background-image: url(imagenes/Pag.jpg);
 	background-repeat: no-repeat;
 	
 }
@@ -257,6 +267,12 @@ font-family: Origin Tech Demo;
 .sec2 b{
 color: #0EE6E6;
 }
+.sec2{
+	height: 100px;
+	width: 100px;
+}
+
+
 
 
 /* CONTENIDO CARTAS */
@@ -385,6 +401,10 @@ margin: 0 10px;
 	gap: 3.5em;
 	flex-wrap: wrap;
 }
+
+
+
+
 
 /* Responsive Design */
 
@@ -588,8 +608,6 @@ position: relative;
 		color: #fff;
 	}
 
-
-
 /*SECCION PERSONAJES*/
 
 	.titulomuñecos{
@@ -599,14 +617,6 @@ position: relative;
 		font-size: 1.5em;
 		color: #fff;
 	}
-
-
-
-
-
-
-
-
 
 /** Footer */
 footer{
@@ -713,5 +723,5 @@ margin: 0 10px;
 	align-items: left;
 }
 
-}
 
+}
